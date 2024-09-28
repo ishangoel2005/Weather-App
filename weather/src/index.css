@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Outfit', 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1c1c;
+  color: white;
+  height: 100vh;
+}
+p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.app:before {
+  content: '';
+  background: url('./assets/clear.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.search {
+  margin-bottom: 2rem;
+}
+.search input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+  width: 300px;
+  text-align: center;
+}
+.search input::placeholder {
+  color: #f8f8f8;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.top {
+  margin-bottom: 2rem;
+}
+.location p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.temp h1 {
+  font-size: 6rem;
+}
+.description p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bold {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+}
+.weather-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+}
+.weather-info {
+  flex: 1;
+  padding: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.map {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+/********MEDIA QUERIES**********/
+
+
+@media (max-width: 1024px) {
+  .weather-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .weather-info,
+  .map {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  .search input {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .location p {
+    font-size: 1.5rem;
+  }
+  .temp h1 {
+    font-size: 4rem;
+  }
+  .description p {
+    font-size: 1.2rem;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom div {
+    margin: 10px 0;
+  }
+  .bold {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search input {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .location p {
+    font-size: 1.3rem;
+  }
+  .temp h1 {
+    font-size: 3rem;
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  .bottom div {
+    margin: 5px 0;
+  }
+  .bold {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .app {
+    padding: 5px;
+  }
+  .temp h1 {
+    font-size: 2.5rem;
+  }
+  .location p {
+    font-size: 1.2rem;
+  }
+  .bottom {
+    padding: 0.5rem;
+  }
+  .bottom div {
+    margin: 5px 0;
+  }
+}
