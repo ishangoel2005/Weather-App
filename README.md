@@ -17,3 +17,6 @@ This Weather App provides real-time weather information based on the user's sear
 - **Frontend**: React.js
 - **API**: OpenWeatherMap API
 - **CSS**: Custom styling with flexbox for responsive design
+
+## Screenshots:
+![image](https://github.com/user-attachments/assets/21b4e71a-e48d-49c4-9482-031578ce0f6b)
